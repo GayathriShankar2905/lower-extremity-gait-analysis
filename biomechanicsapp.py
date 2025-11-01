@@ -1,5 +1,6 @@
 import streamlit as st
-import cv2, os, tempfile
+import os, tempfile
+import cv2
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
