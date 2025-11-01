@@ -1,6 +1,11 @@
 import streamlit as st
+try:
+    import cv2
+except ImportError as e:
+    st.error(f"OpenCV failed to load: {e}")
+import os, tempfile, numpy as np, pandas as pd, matplotlib.pyplot as plt
+
 import os, tempfile
-import cv2
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
